@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio</title>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("o0y1nMIko7rTkeTbk"); // هتلاقي الـ user ID في لوحة التحكم
+  })();
+</script>
+</head>
+<body>
+
+    <section>
+      <div class="icon-container">
+        <div class="icon-box about" data-modal="about">
+          <i class="fa-regular fa-address-card"></i>
+        </div>
+        <div class="icon-box projects" data-modal="projects">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <div class="icon-box testimonial" data-modal="testimonial">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div class="icon-box contact" data-modal="contact">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+      </div>
+    </section>
+
+    <div class="popup" id="about">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body about-container">
+          <div class="img-frame">
+            <img
+              src="assets/Images/6039546706732894133.jpg"
+              alt="" />
+          </div>
+          <div class="hero-content">
+            <h1> Abdlarhman Aboelazm</h1>
+            <p>
+              I'm a front-end developer. I have dedicated myself to creating
+              visually appealing and user-friendly websites. I'm always open to
+              using new skill sets and I believe in the power of collaboration,
+              working closely with designers and back-end developers to deliver
+              cohesive and effective solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="projects">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="popup-body">
+          <div class="skill-list">
+            <h1>Skills</h1>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Javascript</li>
+              <li>React</li>
+              <li>Vue JS</li>
+              <li>Bootstrap</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <div class="project-container">
+            <h1>Projects</h1>
+            <div class="all-projects">
+              <div class="project-box">
+                <img
+                  src="assets/Images/Screenshot 2025-07-18 073513.png"
+                  alt="" />
+                <div class="overlay">
+                  <h3>cinema-landing</h3>
+                  <button class="more-btn">
+                    <a href="https://ciineflix.netlify.app/" target="_blank">
+  <span>Live Demo</span>
+</a>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="assets/Images/Screenshot 2025-07-18 073940.png"
+                  alt="" />
+                <div class="overlay">
+                  <h3>ecommerce Template</h3>
+                  <button class="more-btn">
+                    <a href="https://ecommerceeee1.netlify.app/" target="_blank">
+  <span>Live Demo</span>
+</a>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="assets/Images/Screenshot 2025-07-18 073952.png"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Travel Landing Page</h3>
+                  <button class="more-btn">
+                    <a href="https://tourrly.netlify.app/" target="_blank">
+  <span>Live Demo</span>
+</a>
+                  </button>
+                </div>
+              </div>
+
+              <div class="project-box">
+                <img
+                  src="assets/Images/Screenshot 2025-07-18 073946.png"
+                  alt="" />
+                <div class="overlay">
+                  <h3>Car Rent website</h3>
+                  <button class="more-btn">
+                    <a href="https://riidex.netlify.app/" target="_blank">
+  <span>Live Demo</span>
+</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="testimonial">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body testimonial-container">
+          <h1>Certificates</h1>
+
+          <div class="slider-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="assets/Images/download.jpg"
+                      alt="" />
+                    <h2>TypeScript Fundamentals</h2>
+                  </div>
+                  <p>
+                     Certificate of completion for TypeScript Fundamentals.<br />
+    <strong>Duration:</strong> 2 hours,8 minutes<br />
+    <strong>Issued to:</strong> Abdalrhman Abdallah Ahmed Aboelazm
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="assets/Images/download.jpg"
+                      alt="" />
+                    <h2>Database Fundamentals</h2>
+                  </div>
+                  <p>
+                    Certified by ITI in Database Fundamentals.<br />
+    Covers relational concepts, normalization, and SQL basics.
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="assets/Images/download.jpg"
+                      alt="" />
+                    <h2>Web Applications with PHP & MySQL</h2>
+                  </div>
+                  <p>
+                    ITI Certified in building dynamic web apps using PHP & MySQL.<br />
+    Includes database integration, forms, and server-side logic.
+                  </p>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="assets/Images/download.jpg"
+                      alt="" />
+                    <h2>Build a Full Website with WordPress</h2>
+                  </div>
+                  <p>
+                    ITI course for creating fully functional WordPress sites.<br />
+    Includes themes, plugins, and content management.
+                  </p>
+                </div>
+                                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="assets/Images/download.jpg"
+                      alt="" />
+                    <h2>JavaScript: ES6 and Beyond</h2>
+                  </div>
+                  <p>
+                    ITI Certified in modern JavaScript (ES6+).<br />
+    Covers let/const, arrow functions, promises, and modules.
+                  </p>
+                </div>
+                                <div class="swiper-slide">
+                  <div class="user-info">
+                    <img
+                      src="assets/Images/download.jpg"
+                      alt="" />
+                    <h2>Create a Website with Free Hosting</h2>
+                  </div>
+                  <p>
+                    Certified by ITI for deploying WordPress websites using free hosting & sub-domains.
+                  </p>
+                </div>
+
+                <div class="swiper-slide swiper-no-swiping">
+                  <div class="user-info">
+                    <img
+                      src="assets/Images/6039546706732894133.jpg"
+                      alt="" />
+                    <h2>My Resume</h2>
+                  </div>
+                  <p>
+Click the button below to download my latest CV in PDF format.
+                  </p>
+                   <a href="assets/Images/Abdalrhman cv.pdf" download class="more-btn" target="_blank"
+   style="text-decoration: none; color: inherit; background-color: transparent;   border-radius: 8px; display: inline-flex; align-items: center; gap: 8px; cursor: pointer; transition: all 0.3s ease;">
+  <span style="color: inherit;">Show <i class="fa-solid fa-download" style="color: inherit;"></i></span>
+</a>
+                </div>
+              </div>
+              <ul class="control" id="custom-control">
+                <li class="prev">
+                  <ion-icon class="arrow" name="caret-back-outline"></ion-icon>
+                </li>
+                <li class="next">
+                  <ion-icon
+                    class="arrow"
+                    name="caret-forward-outline"></ion-icon>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="contact">
+      <div class="popup-container">
+        <div class="popup-header">
+          <div class="button-container">
+            <button class="close-btn circle-btn red">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <button class="close-btn circle-btn yellow">
+              <i class="fa-solid fa-window-minimize"></i>
+            </button>
+            <button class="maximize-btn circle-btn green">
+              <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+            </button>
+          </div>
+        </div>
+        <div class="popup-body contact-container">
+          <h1>Contact</h1>
+          <p>Hi there, you can contact with me via email.</p>
+          <form id="contact-form">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="user_name"
+              placeholder="Your name.." />
+
+            <label for="email">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="user_email"
+              placeholder="Your mail.." />
+
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="message"
+              placeholder="Write something.."
+              style="height: 200px"></textarea>
+
+            <button class="submit-btn more-btn" type="submit">
+              <span>Submit <i class="fa-solid fa-paper-plane"></i></span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
